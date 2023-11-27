@@ -1,11 +1,11 @@
 
 ## Pricing Algorithm
  
-This algorithm calculates the price of a financial derivative using the Thomas algorithm.
+This algorithm calculates the price of a financial derivative using finite differences.
   It solves a system of equations represented by a tridiagonal matrix.
  
  
-The algorithm iterates over each row of the tridiagonal matrix and solves the system of equations using the Thomas algorithm.
+The algorithm iterates over each row of the tridiagonal matrix and solves the system of equations.
  
  
 We have:
@@ -30,7 +30,7 @@ $$\alpha = -\frac{1}{2}dt \left( \frac{1}{dS^{2}}\sigma^{2}S_{j}^{2} + \frac{rS_
 $$\beta = -1 + dt \left( \frac{1}{dS^{2}}\sigma^{2}S_{j}^{2} + r \right)$$
 $$\gamma = -\frac{1}{2}dt \left( \frac{1}{dS^{2}}\sigma^{2}S_{j}^{2} - \frac{rS_j}{dS} \right)$$
 
-Therefore, for each row, we get a tridiagonal matrix. We can solve this system using the Thomas algorithm.
+Therefore, for each row, we get a tridiagonal matrix. We can now solve this system.
 
 G is the matrix of the option price at each time step and each price step. We have:
 $$G_{i,j} = V(S_{j},t_{i})$$
