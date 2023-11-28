@@ -57,7 +57,5 @@ $$A = \begin{pmatrix}
  We'll apply this development to an european put which is issued at time 0 and expires at time T, with a strike K. Its payoff at expiry is given by:
     $$max(Ke^{-rT}-S_{T},0)$$
 The boundary conditions are:
-    $$G_{i,0} = K e^{-r t_{i}}$$
-    $$G_{i,N} = 0$$
     $$G_{T,j} = max(K-S_{j},0)$$
 The final condition gives us the value of the option at expiry. We can then calculate the value of the option at each time step and each price step by inversing the matrix A. This is done in the script "pricing_eu_.py".
