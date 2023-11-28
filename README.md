@@ -23,7 +23,7 @@ Which leads to:
 $$G_{i+1,j} = -dt \left( \frac{1}{2}\sigma^{2}S_{j}^{2} \frac{G_{i,j+1}-2G_{i,j}+G_{i,j-1}}{dS^{2}} + rS_j \frac{G_{i,j+1}-G_{i,j-1}}{2 dS} - rG_{i,j} \right) - G_{i,j}$$
 
 We can rewrite this equation as:
-$$G_{i+1,j} = \alpha G_{i,j+1} + \beta G_{i,j} + \gamma G_{i,j-1}$$
+$$G_{i+1,j} = \alpha_j G_{i,j+1} + \beta_j G_{i,j} + \gamma_j G_{i,j-1}$$
 
 With:
 $$\alpha = -\frac{1}{2}dt \left( \frac{1}{dS^{2}}\sigma^{2}S_{j}^{2} + \frac{rS_j}{dS} \right)$$
