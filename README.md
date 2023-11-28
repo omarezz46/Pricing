@@ -26,9 +26,9 @@ We can rewrite this equation as:
 $$G_{i+1,j} = \alpha_j G_{i,j+1} + \beta_j G_{i,j} + \gamma_j G_{i,j-1}$$
 
 With:
-$$\alpha = -\frac{1}{2}dt \left( \frac{1}{dS^{2}}\sigma^{2}S_{j}^{2} + \frac{rS_j}{dS} \right)$$
-$$\beta = -1 + dt \left( \frac{1}{dS^{2}}\sigma^{2}S_{j}^{2} + r \right)$$
-$$\gamma = -\frac{1}{2}dt \left( \frac{1}{dS^{2}}\sigma^{2}S_{j}^{2} - \frac{rS_j}{dS} \right)$$
+$$\alpha_j = -\frac{1}{2}dt \left( \frac{1}{dS^{2}}\sigma^{2}S_{j}^{2} + \frac{rS_j}{dS} \right)$$
+$$\beta_j = -1 + dt \left( \frac{1}{dS^{2}}\sigma^{2}S_{j}^{2} + r \right)$$
+$$\gamma_j = -\frac{1}{2}dt \left( \frac{1}{dS^{2}}\sigma^{2}S_{j}^{2} - \frac{rS_j}{dS} \right)$$
 
 Therefore, for each row, we get a tridiagonal matrix. We can now solve this system.
 
