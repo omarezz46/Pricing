@@ -30,5 +30,5 @@ $$\alpha = \frac{1}{2}dt \left( \frac{1}{dS^{2}}\sigma^{2}S_{j}^{2} + \frac{rS_j
 $$\beta = 1 - dt \left( \frac{1}{dS^{2}}\sigma^{2}S_{j}^{2} + r \right)$$
 $$\gamma = \frac{1}{2}dt \left( \frac{1}{dS^{2}}\sigma^{2}S_{j}^{2} - \frac{rS_j}{dS} \right)$$
 
-Therefore starting from $G_{0,j} = max(S_j - K, 0)$, we can calculate $G_{i,j}$ for all i and j.
+Therefore for example, if we're working on a call option, starting from $G_{0,j} = max(S_j - K, 0)$, we can calculate $G_{i,j}$ for all i and j.
 
